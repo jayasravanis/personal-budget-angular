@@ -2,104 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+    <!-- This is an SEO Change: Added meta description for better search engine ranking -->
+    <meta name="description" content="Personal Budget App - Manage your finances, set budgets, and get alerts when spending limits are reached.">
+
+    <!-- This is an SEO Change: Added meta keywords for better SEO -->
+    <meta name="keywords" content="Personal Budget, Finance App, Budget Management, Free App">
+
+    <!-- This is an SEO Change: Added meta robots to control search indexing -->
+    <meta name="robots" content="index, nofollow">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <!-- This is an A11y Change: Added skip to content link for better navigation -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-    <div class="menu">
-        <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
-            <li><a href="https://google.com">Google</a></li>
-        </ul>
-    </div>
+    <!-- This is a Semantic HTML Change: Changed div to nav and wrapped it in a header -->
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="https://google.com" target="_blank">Google</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="hero">
+    <!-- This is a Semantic HTML Change: Changed div to section -->
+    <section class="hero">
         <h1>Personal Budget</h1>
         <h2>A personal-budget management app</h2>
-    </div>
+    </section>
 
-    <div class="container center">
+    <!-- This is a Semantic HTML Change: Changed div to main for the main content of the page -->
+    <main class="container center" id="main">
 
-        <div class="page-area">
-
-            <div class="text-box">
+        <section class="page-area">
+            
+            <article class="text-box">
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Stay on track</h1>
                 <p>
                     Do you know where you are spending your money? If you really stop to track it down,
                     you would get surprised! Proper budget management depends on real data... and this
                     app will help you with that!
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Alerts</h1>
                 <p>
                     What if your clothing budget ended? You will get an alert. The goal is to never go over the budget.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Results</h1>
                 <p>
                     People who stick to a financial plan, budgeting every expense, get out of debt faster!
                     Also, they to live happier lives... since they expend without guilt or fear... 
                     because they know it is all good and accounted for.
                 </p>
-            </div>
+            </article>
     
-            <div class="text-box">
+            <article class="text-box">
                 <h1>Free</h1>
                 <p>
                     This app is free!!! And you are the only one holding your data!
                 </p>
-            </div>
+            </article>
 
-        </div>
+        </section>
 
-    </div>
+    </main>
 
-    <div class="bottom">
+    <!-- This is an A11y Change: Added aria-label to better describe the footer -->
+    <footer class="bottom" aria-label="Copyright Information">
         <div class="center">
-            All rights reserved &copy; Fabio Nolasco
+            <!-- This is an A11y Change: Changed text for screen readers -->
+            <p>All rights reserved &copy; <span aria-hidden="true">Fabio Nolasco</span></p>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>
