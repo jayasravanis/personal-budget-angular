@@ -133,8 +133,8 @@
         var dataSource = {
             datasets: [{
                 data: [],
-                backgroundColor: ['rgba(255, 99, 132, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(75, 192, 192, 0.5)'],
-                borderColor: ['rgba(255, 99, 132, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)'],
+                backgroundColor: [],
+                borderColor: [],
                 borderWidth: 1
             }],
             labels: []
@@ -155,6 +155,8 @@
                 for(var i=0; i<myBudgetData.length; i++) {
                     dataSource.datasets[0].data.push(myBudgetData[i].budget);
                     dataSource.labels.push(myBudgetData[i].title);
+                    dataSource.datasets[0].backgroundColor.push(myBudgetData[i].color);
+                    dataSource.datasets[0].borderColor.push(myBudgetData[i].borderColor);
                 }
                 createChart();
             })
